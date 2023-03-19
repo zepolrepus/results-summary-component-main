@@ -39,7 +39,6 @@ main {
     border-radius: 32px;
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
 }
 
 .container .box1 {
@@ -48,38 +47,41 @@ main {
     border-radius: 32px;
     background: var( --Light-slate-blue);
     background: linear-gradient(var(--Light-slate-blue) 0%, var(--Light-royal-blue) 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .container .box2 {
     width: 368px;
     height: 512px;
+    align-content: center;
 }
 
-.container .box1 h2 {
-    color: var( --Light-lavender);
+.container .box2 .results {
+    width: 315px;
+    margin-left: 40px;
 }
-.container .box1 .oval {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    background: var(--Violet-blue);
-    background: radial-gradient(var(--Violet-blue) 0%, var(--Persian-blue) 100%);
-    font-size: 18px;
-    font-weight: bold;
-    color: var( --Light-lavender);
-}
-
-.number {
-    color: var(--White);
-    font-size: 72px;
+.container .box2 .results .reaction {
+    width: 315px;
+    height: 56px;
+    background-color: var(--Light-red);
 }
 
 
-.container .box1 p {
-    color: var( --Light-lavender);
-    font-size: 18px;
-    font-weight: bold;
+
+@media (max-width: 420px) {
+    .container {
+        width: 375px;
+        height: 809px;
+        border-radius: 0px;
+        flex-direction: column;
+    }
+    .container .box1 {
+        width: 375px;
+        height: 356px;
+        border-radius: 0px 0px 32px 32px;
+        background: var( --Light-slate-blue);
+        background: linear-gradient(var(--Light-slate-blue) 0%, var(--Light-royal-blue) 100%);
+    }
+    .container .box2 {
+        width: 375px;
+    }
 }
