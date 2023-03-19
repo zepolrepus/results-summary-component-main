@@ -39,49 +39,111 @@ main {
     border-radius: 32px;
     display: flex;
     flex-direction: row;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
+
 
 .container .box1 {
     width: 368px;
     height: 512px;
     border-radius: 32px;
-    background: var( --Light-slate-blue);
-    background: linear-gradient(var(--Light-slate-blue) 0%, var(--Light-royal-blue) 100%);
+    background: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue),
+    var(--Light-royal-blue)
+    );
+    color: var(--White);
+    text-align: center;
+    align-content: center;
+}
+
+.box1_head {
+    color: var(--Light-lavender);
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.score {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to top, var(--Persian-blue), var(--Violet-blue));
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.score span:first-child {
+    font-size: 72px;
+    font-weight: bold;
+}
+.score span:last-child {
+    color: var(--Light-lavender);
+}
+
+.message {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.information {
+    color: var(--Light-lavender);
+    font-size: 18px;
+    padding: 0px 60px;
 }
 
 .container .box2 {
     width: 368px;
     height: 512px;
-    align-content: center;
-}
-
-.container .box2 .results {
-    width: 315px;
-    margin-left: 40px;
-}
-.container .box2 .results .reaction {
-    width: 315px;
-    height: 56px;
-    background-color: var(--Light-red);
 }
 
 
+.box2_head {
+    color: var(--Dark-gray-blue);
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 40px;
+}
 
-@media (max-width: 420px) {
+.results {
+    width: 288px;
+    height: 272px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.results div {
+    background-color: brown;
+    height: 52px;
+}
+
+button {
+    width: 288px;
+    height: 52px;
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    border-radius: 32px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 500px) {
     .container {
         width: 375px;
         height: 809px;
-        border-radius: 0px;
         flex-direction: column;
+        border-radius: 0px;
     }
     .container .box1 {
         width: 375px;
         height: 356px;
         border-radius: 0px 0px 32px 32px;
-        background: var( --Light-slate-blue);
-        background: linear-gradient(var(--Light-slate-blue) 0%, var(--Light-royal-blue) 100%);
-    }
-    .container .box2 {
-        width: 375px;
     }
 }
