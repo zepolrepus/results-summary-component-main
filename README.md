@@ -10,11 +10,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 
 ## Overview
@@ -45,9 +42,6 @@ Users should be able to:
 - Flexbox
 - JSON
 - Javascript
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 
 ## Author
 
