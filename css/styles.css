@@ -116,14 +116,55 @@ main {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding: 15px 0;
 }
 
 .results div {
-    background-color: brown;
     height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.results div span {
+    font-size: 18px;
+    font-weight: normal;
+}
+.results div span:last-child {
+    padding: 0px 10px;
+    color: var(--Dark-gray-blue);
 }
 
-button {
+.results .Reaction {
+    background-color: hsla(0, 100%, 67%, 0.08);
+    color: var(--Light-red);
+}
+.results .Memory {
+    background-color: hsla(39, 100%, 56%, 0.08);
+    color: var(--Orangey-yellow);
+}
+.results .Verbal {
+    background-color: hsla(166, 100%, 37%, 0.08);
+    color: var(--Green-teal);
+}
+.results .Visual {
+    background-color: hsla(234, 85%, 45%, 0.08);
+    color: var(--Cobalt-blue);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    padding: 0px 10px;
+    transform: translate(0px, 4px);
+}
+
+.results .value {
+    font-weight: bold;
+}
+
+.button {
     width: 288px;
     height: 52px;
     background-color: var(--Dark-gray-blue);
@@ -131,6 +172,25 @@ button {
     border-radius: 32px;
     font-size: 18px;
     font-weight: bold;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 52px;
+    cursor: pointer;
+}
+.button:hover {
+    width: 288px;
+    height: 52px;
+    background-color: var(--Light-royal-blue);
+    color: var(--White);
+    border-radius: 32px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 52px;
+    cursor: pointer;
 }
 
 
@@ -145,5 +205,41 @@ button {
         width: 375px;
         height: 356px;
         border-radius: 0px 0px 32px 32px;
+    }
+
+    .box1_head {
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 5px;
+    }
+
+    .box2_head {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .score {
+        width: 140px;
+        height: 140px;
+        gap: 0rem;
+    }
+
+    .score span:first-child {
+        font-size: 56px;
+        font-weight: bolder;
+    }
+    .score span:last-child {
+        font-size: 16px
+    }
+
+    .message {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .information {
+        color: var(--Light-lavender);
+        font-size: 16px;
+        padding: 0px 60px;
     }
 }
